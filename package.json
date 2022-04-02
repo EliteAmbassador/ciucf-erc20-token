@@ -1,7 +1,7 @@
 {
   "name": "CIUCF-ERC20-token",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,21 @@
   "license": "ISC",
   "devDependencies": {
     "hardhat": "^2.9.2"
-  }
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@truffle/hdwallet-provider": "2.0.4",
+    "web3": "^1.7.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliteAmbassador/ciucf-erc20-token.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EliteAmbassador/ciucf-erc20-token/issues"
+  },
+  "homepage": "https://github.com/EliteAmbassador/ciucf-erc20-token#readme"
 }

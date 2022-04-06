@@ -27,8 +27,8 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 require("dotenv").config();
 
-MNEMONIC = process.env.mnemonic;
-INFURA_PROJECT_URL = process.env.INFURA_PROJECT_URL;
+const MNEMONIC = process.env.mnemonic;
+const INFURA_PROJECT_URL = process.env.INFURA_PROJECT_URL;
 
 module.exports = {
   /**
@@ -50,7 +50,7 @@ module.exports = {
     //
     development: {
     host: "127.0.0.1",     // Localhost (default: none)
-    port: 8545,            // Standard Ethereum port (default: none)
+    port: 7545,            // Standard Ethereum port (default: none)
     network_id: "*",       // Any network (default: none)
     },
     // Another network with more advanced options...
@@ -67,10 +67,10 @@ module.exports = {
     rinkeby: {
     provider: () => new HDWalletProvider(MNEMONIC, INFURA_PROJECT_URL),
     network_id: 4,       // Rinkeby's id
-    gas: 5500000,        // Rinkeby has a lower block limit than mainnet
-    confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+    gas: 5500000 ,        // Rinkeby has a lower block limit than mainnet
+    //confirmations: 2,    // # of confs to wait between deployments. (default: 0)
     networkCheckTimeout: 999999,
-    timeoutBlocks: 20000,  // # of blocks before a deployment times out  (minimum/default: 50)
+    timeoutBlocks: 50000,  // # of blocks before a deployment times out  (minimum/default: 50)
     skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
     // Useful for private networks
